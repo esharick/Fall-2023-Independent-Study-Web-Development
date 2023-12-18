@@ -1,0 +1,157 @@
+<exercises>
+	<category name="Chest">
+		<exercise name="Bench Press" suggestedSets="3" suggestedReps="8" suggestedWeight="135"></exercise>
+		<exercise name="Dumbbell Flys" suggestedSets="3" suggestedReps="8" suggestedWeight="20"></exercise>
+		<exercise name="Incline Bench Press" suggestedSets="3" suggestedReps="8" suggestedWeight="115"></exercise>
+		<exercise name="Chest Dips" suggestedSets="3" suggestedReps="8" suggestedWeight="0"></exercise>
+		<exercise name="Cable Crossover" suggestedSets="3" suggestedReps="8" suggestedWeight="30"></exercise>
+		<exercise name="Push-Ups" suggestedSets="3" suggestedReps="8" suggestedWeight="0"></exercise>
+		<exercise name="Decline Bench Press" suggestedSets="3" suggestedReps="8" suggestedWeight="125"></exercise>
+		<exercise name="Machine Chest Press" suggestedSets="3" suggestedReps="8" suggestedWeight="150"></exercise>
+		<exercise name="Pec Deck Machine" suggestedSets="3" suggestedReps="8" suggestedWeight="60"></exercise>
+		<exercise name="Parallel Bar Dips" suggestedSets="3" suggestedReps="8" suggestedWeight="0"></exercise>
+		<exercise name="Machine Flys" suggestedSets="3" suggestedReps="8" suggestedWeight="40"></exercise>
+		<exercise name="Wide-Grip Push-Ups" suggestedSets="3" suggestedReps="8" suggestedWeight="0"></exercise>
+		<exercise name="Hammer Strength Chest Press" suggestedSets="3" suggestedReps="8" suggestedWeight="155"></exercise>
+		<exercise name="Dumbbell Pullover" suggestedSets="3" suggestedReps="8" suggestedWeight="25"></exercise>
+		<exercise name="Guillotine Press" suggestedSets="3" suggestedReps="8" suggestedWeight="110"></exercise>
+		<exercise name="Single-Arm Dumbbell Bench Press" suggestedSets="3" suggestedReps="8" suggestedWeight="45"></exercise>
+		<exercise name="Machine Incline Press" suggestedSets="3" suggestedReps="8" suggestedWeight="140"></exercise>
+		<exercise name="Smith Machine Bench Press" suggestedSets="3" suggestedReps="8" suggestedWeight="130"></exercise>
+		<exercise name="Low Cable Crossover" suggestedSets="3" suggestedReps="8" suggestedWeight="35"></exercise>
+	</category>
+	<category name="Legs">
+		<exercise name="Squats" suggestedSets="4" suggestedReps="6" suggestedWeight="135"></exercise>
+		<exercise name="Leg Press" suggestedSets="3" suggestedReps="10" suggestedWeight="180"></exercise>
+		<exercise name="Lunges" suggestedSets="3" suggestedReps="12" suggestedWeight="55"></exercise>
+		<exercise name="Leg Extensions" suggestedSets="3" suggestedReps="12" suggestedWeight="45"></exercise>
+		<exercise name="Hamstring Curls" suggestedSets="4" suggestedReps="8" suggestedWeight="40"></exercise>
+		<exercise name="Good Mornings" suggestedSets="3" suggestedReps="8" suggestedWeight="85"></exercise>
+		<exercise name="Sumo Squats" suggestedSets="4" suggestedReps="6" suggestedWeight="125"></exercise>
+		<exercise name="Smith Machine Squats" suggestedSets="3" suggestedReps="8" suggestedWeight="115"></exercise>
+		<exercise name="Step-Ups" suggestedSets="3" suggestedReps="10" suggestedWeight="60"></exercise>
+		<exercise name="Bulgarian Split Squats" suggestedSets="3" suggestedReps="10" suggestedWeight="65"></exercise>
+		<exercise name="Seated Calf Raises" suggestedSets="4" suggestedReps="12" suggestedWeight="75"></exercise>
+		<exercise name="Front Squats" suggestedSets="3" suggestedReps="8" suggestedWeight="100"></exercise>
+		<exercise name="Hack Squats" suggestedSets="3" suggestedReps="10" suggestedWeight="110"></exercise>
+		<exercise name="Standing Calf Raises" suggestedSets="3" suggestedReps="15" suggestedWeight="110"></exercise>
+		<exercise name="Glute Bridges" suggestedSets="3" suggestedReps="12" suggestedWeight="70"></exercise>
+		<exercise name="Reverse Lunges" suggestedSets="3" suggestedReps="10" suggestedWeight="65"></exercise>
+		<exercise name="Leg Press Calf Raise" suggestedSets="3" suggestedReps="12" suggestedWeight="230"></exercise>
+	</category>
+	<category name="Back">
+		<exercise name="Deadlifts" suggestedSets="4" suggestedReps="5" suggestedWeight="185"></exercise>
+		<exercise name="Stiff-Leg Deadlifts" suggestedSets="3" suggestedReps="10" suggestedWeight="175"></exercise>
+		<exercise name="Pull-Ups" suggestedSets="3" suggestedReps="8" suggestedWeight="0"></exercise>
+		<exercise name="Barbell Rows" suggestedSets="3" suggestedReps="8" suggestedWeight="90"></exercise>
+		<exercise name="T-Bar Rows" suggestedSets="3" suggestedReps="8" suggestedWeight="110"></exercise>
+		<exercise name="Lat Pulldowns" suggestedSets="3" suggestedReps="10" suggestedWeight="100"></exercise>
+		<exercise name="Seated Cable Rows" suggestedSets="4" suggestedReps="8" suggestedWeight="115"></exercise>
+		<exercise name="One-Arm Dumbbell Rows" suggestedSets="3" suggestedReps="10" suggestedWeight="50"></exercise>
+		<exercise name="Bent-Over Barbell Rows" suggestedSets="3" suggestedReps="8" suggestedWeight="95"></exercise>
+		<exercise name="Chin-Ups" suggestedSets="3" suggestedReps="6" suggestedWeight="0"></exercise>
+		<exercise name="Hyperextensions" suggestedSets="3" suggestedReps="12" suggestedWeight="0"></exercise>
+		<exercise name="Smith Machine Rows" suggestedSets="3" suggestedReps="8" suggestedWeight="90"></exercise>
+		<exercise name="Chest Supported Rows" suggestedSets="3" suggestedReps="8" suggestedWeight="80"></exercise>
+		<exercise name="Close-Grip Pulldowns" suggestedSets="3" suggestedReps="8" suggestedWeight="100"></exercise>
+		<exercise name="Machine Pullovers" suggestedSets="3" suggestedReps="10" suggestedWeight="70"></exercise>
+		<exercise name="Dumbbell Pullover" suggestedSets="3" suggestedReps="12" suggestedWeight="35"></exercise>
+		<exercise name="Cable Pulldowns" suggestedSets="3" suggestedReps="8" suggestedWeight="90"></exercise>
+		<exercise name="Wide-Grip Seated Cable Row" suggestedSets="3" suggestedReps="8" suggestedWeight="85"></exercise>
+		<exercise name="Renegade Rows" suggestedSets="3" suggestedReps="8" suggestedWeight="0"></exercise>
+		<exercise name="Face Pulls" suggestedSets="3" suggestedReps="15" suggestedWeight="30"></exercise>
+		<exercise name="Inverted Rows" suggestedSets="3" suggestedReps="8" suggestedWeight="0"></exercise>
+	</category>
+	<category name="Arms">
+		<exercise name="Barbell Curls" suggestedSets="4" suggestedReps="8" suggestedWeight="50"></exercise>
+		<exercise name="Triceps Dips" suggestedSets="3" suggestedReps="10" suggestedWeight="0"></exercise>
+		<exercise name="Skull Crushers" suggestedSets="3" suggestedReps="12" suggestedWeight="40"></exercise>
+		<exercise name="Hammer Curls" suggestedSets="4" suggestedReps="10" suggestedWeight="30"></exercise>
+		<exercise name="Triceps Pushdowns" suggestedSets="3" suggestedReps="12" suggestedWeight="35"></exercise>
+		<exercise name="Preacher Curls" suggestedSets="3" suggestedReps="8" suggestedWeight="45"></exercise>
+		<exercise name="Overhead Triceps Extension" suggestedSets="4" suggestedReps="8" suggestedWeight="50"></exercise>
+		<exercise name="Concentration Curls" suggestedSets="3" suggestedReps="12" suggestedWeight="25"></exercise>
+		<exercise name="Cable Hammer Curls" suggestedSets="3" suggestedReps="10" suggestedWeight="35"></exercise>
+		<exercise name="Triceps Kickbacks" suggestedSets="3" suggestedReps="15" suggestedWeight="20"></exercise>
+		<exercise name="Spider Curls" suggestedSets="3" suggestedReps="10" suggestedWeight="25"></exercise>
+		<exercise name="Close-Grip Bench Press" suggestedSets="4" suggestedReps="8" suggestedWeight="85"></exercise>
+		<exercise name="Rope Hammer Curl" suggestedSets="3" suggestedReps="12" suggestedWeight="30"></exercise>
+		<exercise name="Reverse Grip Triceps Pushdown" suggestedSets="3" suggestedReps="10" suggestedWeight="45"></exercise>
+		<exercise name="Dumbbell Hammer Curl" suggestedSets="3" suggestedReps="12" suggestedWeight="25"></exercise>
+		<exercise name="Skull Crusher with EZ Bar" suggestedSets="4" suggestedReps="8" suggestedWeight="50"></exercise>
+		<exercise name="Dumbbell Concentration Curl" suggestedSets="3" suggestedReps="10" suggestedWeight="20"></exercise>
+		<exercise name="Barbell Wrist Curl" suggestedSets="3" suggestedReps="15" suggestedWeight="35"></exercise>
+		<exercise name="Diamond Push-Ups" suggestedSets="3" suggestedReps="12" suggestedWeight="0"></exercise>
+		<exercise name="Reverse Barbell Curl" suggestedSets="3" suggestedReps="10" suggestedWeight="35"></exercise>
+	</category>
+	<category name="Shoulders">
+		<exercise name="Overhead Press" suggestedSets="4" suggestedReps="8" suggestedWeight="75"></exercise>
+		<exercise name="Lateral Raises" suggestedSets="3" suggestedReps="12" suggestedWeight="15"></exercise>
+		<exercise name="Front Raises" suggestedSets="3" suggestedReps="10" suggestedWeight="20"></exercise>
+		<exercise name="Rear Delt Flys" suggestedSets="3" suggestedReps="12" suggestedWeight="20"></exercise>
+		<exercise name="Arnold Press" suggestedSets="4" suggestedReps="8" suggestedWeight="45"></exercise>
+		<exercise name="Upright Rows" suggestedSets="4" suggestedReps="10" suggestedWeight="50"></exercise>
+		<exercise name="Shrugs" suggestedSets="4" suggestedReps="12" suggestedWeight="80"></exercise>
+		<exercise name="Barbell Shrugs" suggestedSets="4" suggestedReps="12" suggestedWeight="80"></exercise>
+		<exercise name="Seated Dumbbell Press" suggestedSets="3" suggestedReps="10" suggestedWeight="40"></exercise>
+		<exercise name="Face Pulls" suggestedSets="3" suggestedReps="15" suggestedWeight="25"></exercise>
+		<exercise name="Reverse Flys" suggestedSets="3" suggestedReps="12" suggestedWeight="20"></exercise>
+		<exercise name="One-Arm Cable Lateral Raise" suggestedSets="3" suggestedReps="12" suggestedWeight="15"></exercise>
+		<exercise name="Dumbbell Front Raise" suggestedSets="3" suggestedReps="10" suggestedWeight="15"></exercise>
+		<exercise name="Lateral Cable Raise" suggestedSets="3" suggestedReps="12" suggestedWeight="20"></exercise>
+		<exercise name="Plate Front Raise" suggestedSets="3" suggestedReps="10" suggestedWeight="15"></exercise>
+		<exercise name="Dumbbell Shrugs" suggestedSets="4" suggestedReps="12" suggestedWeight="40"></exercise>
+		<exercise name="Machine Shoulder Press" suggestedSets="3" suggestedReps="10" suggestedWeight="50"></exercise>
+		<exercise name="Bent-Over Reverse Flys" suggestedSets="3" suggestedReps="12" suggestedWeight="15"></exercise>
+		<exercise name="Machine Lateral Raise" suggestedSets="3" suggestedReps="10" suggestedWeight="40"></exercise>
+		<exercise name="Smith Machine Overhead Press" suggestedSets="3" suggestedReps="10" suggestedWeight="50"></exercise>
+	</category>
+
+	<category name="Core">
+		<exercise name="Crunches" suggestedSets="3" suggestedReps="15"></exercise>
+		<exercise name="Plank" suggestedSets="3" suggestedTime="45"></exercise>
+		<exercise name="Leg Raises" suggestedSets="3" suggestedReps="12"></exercise>
+		<exercise name="Russian Twists" suggestedSets="3" suggestedReps="20"></exercise>
+		<exercise name="Mountain Climbers" suggestedSets="3" suggestedReps="20"></exercise>
+		<exercise name="Standing Side Bend" suggestedSets="3" suggestedReps="12"></exercise>
+		<exercise name="Bicycle Crunches" suggestedSets="3" suggestedReps="20"></exercise>
+		<exercise name="Reverse Crunches" suggestedSets="3" suggestedReps="15"></exercise>
+		<exercise name="Flutter Kicks" suggestedSets="3" suggestedReps="20"></exercise>
+		<exercise name="Woodchoppers" suggestedSets="3" suggestedReps="15"></exercise>
+		<exercise name="Bird Dog" suggestedSets="3" suggestedReps="12"></exercise>
+		<exercise name="Ab Rollout" suggestedSets="3" suggestedReps="12"></exercise>
+		<exercise name="Side Plank" suggestedSets="3" suggestedTime="30"></exercise>
+		<exercise name="Dragon Flag" suggestedSets="3" suggestedReps="8"></exercise>
+		<exercise name="Dead Bug" suggestedSets="3" suggestedReps="12"></exercise>
+		<exercise name="Hollow Body Hold" suggestedSets="3" suggestedTime="30"></exercise>
+		<exercise name="Windshield Wipers" suggestedSets="3" suggestedReps="12"></exercise>
+		<exercise name="Scissor Kicks" suggestedSets="3" suggestedReps="20"></exercise>
+		<exercise name="Spiderman Plank" suggestedSets="3" suggestedReps="12"></exercise>
+	</category>
+
+
+	<category name="Cardio">
+		<exercise name="Running" suggestedDuration="30"></exercise>
+		<exercise name="Cycling" suggestedDuration="45"></exercise>
+		<exercise name="Jump Rope" suggestedDuration="20"></exercise>
+		<exercise name="Swimming" suggestedDuration="40"></exercise>
+		<exercise name="Rowing" suggestedDuration="30"></exercise>
+		<exercise name="Elliptical Trainer" suggestedDuration="40"></exercise>
+		<exercise name="Stair Climber" suggestedDuration="25"></exercise>
+		<exercise name="Kickboxing" suggestedDuration="40"></exercise>
+		<exercise name="Box Jumps" suggestedSets="3" suggestedReps="15"></exercise>
+		<exercise name="Mountain Climbers" suggestedSets="3" suggestedReps="20"></exercise>
+		<exercise name="Burpees" suggestedSets="3" suggestedReps="12"></exercise>
+		<exercise name="Jumping Jacks" suggestedDuration="15"></exercise>
+		<exercise name="Sprinting" suggestedDuration="10"></exercise>
+		<exercise name="Hiking" suggestedDuration="60"></exercise>
+		<exercise name="Skating" suggestedDuration="45"></exercise>
+		<exercise name="Dancing" suggestedDuration="30"></exercise>
+		<exercise name="Boxing" suggestedDuration="45"></exercise>
+	</category>
+
+	<category name="Other">
+		<exercise name="Other"></exercise>
+	</category>
+</exercises>
+

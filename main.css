@@ -1,0 +1,381 @@
+body {
+    background-color: whitesmoke;
+    margin:0;
+}
+
+h1, h2, h3, h4, h5, h6, a, th, form label{
+    color: darkseagreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Tahoma;
+    margin:2px;
+}
+p, ul, ol, li, li a, form input {
+    color: #111111;
+    font-size: 12pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form input{
+    border-radius: 5px;
+    margin: auto;
+}
+
+form textarea{
+    width: 90%;
+}
+
+.error {
+    color: #FF0000;
+}
+
+td, table a {
+    color: #111111;
+    font-size: 12pt;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    padding:2px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 10px;
+}
+
+td, th{
+    border: 1px solid darkseagreen;
+    text-align:center;
+}
+
+tr:nth-child(even) {
+    background-color: #caefc6;
+}
+
+tr:nth-child(odd) {
+    background-color: #a9dda4;
+}
+
+tr:hover {
+    background-color: #f6ffa7;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #6cae6c;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.content {
+    max-width:auto;
+    margin:10px;
+    text-align:center;
+}
+
+.content-left {
+    max-width: auto;
+    margin: 10px;
+    text-align: left;
+}
+
+.content-right {
+    max-width: auto;
+    margin: 10px;
+    text-align: right;
+}
+
+.text-colored {
+    background-color:black;
+    color: white;
+}
+
+.warning-message {
+    color: #9e1616;
+    visibility: hidden;
+}
+
+.bordered-content {
+    border-style: groove;
+    border-width: 7px;
+    border-color: #c1f094;
+    border-radius: 50px 15px;
+    padding: 20px;
+    margin: 130px;
+    width: auto;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .bordered-content {
+        border-style: groove;
+        border-width: 5px;
+        border-color: #c1f094;
+        border-radius: 3px 3px;
+        padding: 2px;
+        margin: 5px;
+    }
+
+    form textarea {
+        max-width: 300px;
+    }
+}
+
+
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+        div.gallery:hover {
+            border: 1px groove black;
+        }
+
+        div.gallery img, div.gallery iframe {
+            width: 100%;
+            height: auto;
+        }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .responsive {
+        padding: 0 3px;
+        float: left;
+        width: 24.99%;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .responsive {
+            width: 49.99%;
+            margin: 6px 0;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .responsive {
+            width: 100%;
+        }
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #bbc6b9;
+}
+
+    ul.topnav li {
+        float: left;
+    }
+
+        ul.topnav li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            ul.topnav li a:hover:not(.active) {
+                background-color: darkseagreen;
+            }
+
+            ul.topnav li a.active {
+                background-color: #437a3e;
+                color: whitesmoke;
+            }
+
+        ul.topnav li.right {
+            float: right;
+        }
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+
+/*Grid for battleship*/
+.grid-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    background-color: #5daaef;
+    border: 3px solid darkseagreen;
+    padding: 12px;
+    margin: 12px;
+}
+
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-wrapper {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center; /* Center items vertically */
+    }
+    .grid-item {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+/* Overlay image styles */
+.overlay-container {
+    position: relative;
+    overflow: visible;
+}
+
+.overlay-image {
+    position: absolute;
+    top:0;
+    left:0;
+    overflow:visible;
+}
+
+
+.uiButton {
+    background-color: darkseagreen;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.uiButton:hover {
+    background-color: #a7d9a3;
+    box-shadow: 0 12px 14px 0 rgba(0,50,0,0.22), 0 15px 30px 0 rgba(0,100,0,0.15);
+}
+
+.uiButton:disabled {
+    background-color: #799876;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+
+p mark{
+    background-color: #f6ffa7; /* Change the background color */
+    color: #333; /* Change the text color */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+
+/*
+    Bootstrap additions
+*/
+.nav-link:hover {
+    color: darkseagreen;
+    background-color: seashell;
+}
+
+
+
+.card-body#ship-box {
+    background-color: #5e9eebb7;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+
+
+.carousel-item img {
+    max-height: 50vh;
+    max-width: 100%; 
+    margin: auto;
+    display: block;
+    object-fit: contain; 
+    object-position: center;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    height: 3rem; 
+    width: 3rem; 
+    top: 35vh;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1); 
+}

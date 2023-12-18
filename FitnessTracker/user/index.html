@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Icons/fitness.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/FitnessTracker/main.css" />
+    <title>Fitness Tracker | Profile</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/FitnessTracker/">
+                <img src="/Icons/fitness.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/FitnessTracker/user/">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/FitnessTracker/workout_history/">Workout History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/FitnessTracker/log_workout/">Log Workout</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav exit-button" style="margin-left: auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/FitnessTracker/" onclick="logout()">Logout</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="margin-top:100px">
+        <div class="bordered-content">
+            <h1 id="userName">Welcome,</h1>
+            <hr />
+            <h2>Daily Recordings:</h2>
+            <p>Current Weight: <span><input type="text" id="currentWeightInput"></span> lbs</p>
+            <p>Calorie Intake Today: <span><input type="text" id="dailyCaloriesInput"></span> cal</p>
+            <p>Water Intake Today: <span><input type="text" id="dailyWaterInput"></span> oz</p>
+            <button style="margin:12px" id="submitDailyButton" onclick="submitDaily()">Submit</button>
+            <hr />
+            <div class="chart-container">
+                <canvas style="height:400px" id="scatterChart"></canvas>
+            </div>
+
+            <hr />
+
+            <h2>
+                Goals:
+            </h2>
+            <ul id="goalsContainer"></ul>
+            <form>
+                <input style="max-width:500px; width:100%" type="text" id="newGoal"/>
+                <br />
+                <button style="margin:12px" id="addGoalButton">Add Goal</button>
+                <button style="margin:12px; width:220px;" id="removeFinishedGoalsButton">Clear Finished Goals</button>
+            </form>
+            <hr />
+            <h2>
+                Weekly Summary
+            </h2>
+            <br />
+            <div id="weekly-calendar">
+                
+            </div>
+        </div>
+        
+    </div>
+    <hr />
+  
+       
+ 
+  
+
+
+
+
+    <!--Scripts to run on every page. Authenticate user with cookie, then create a userObject variable from local storage-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/FitnessTracker/global_scripts/cookieScripts.js"></script>
+    <script src="/FitnessTracker/global_scripts/models/exercise.js"></script>
+    <script src="/FitnessTracker/global_scripts/models/workout.js"></script>
+    <script src="/FitnessTracker/global_scripts/models/user.js"></script>
+    <script src="/FitnessTracker/global_scripts/updateUser.js"></script>
+    <script src="/FitnessTracker/global_scripts/getInfoFromServer.js"></script>
+    <script src="/FitnessTracker/global_scripts/pageScripts.js"></script>
+    
+    <!--Page specific script for displaying and updating user data-->
+    <script src="displayUserProfile.js"></script>
+    <!--Script for graphs-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@1.0.0/dist/chartjs-adapter-moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+
+    
+</body>
+</html>

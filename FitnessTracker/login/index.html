@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Icons/fitness.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/FitnessTracker/main.css" />
+    <title>Fitness Tracker | Login</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid" >
+            <a class="navbar-brand" href="/FitnessTracker/">
+                <img src="/Icons/fitness.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/FitnessTracker/signup/">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./">Login</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav exit-button" style="margin-left: auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Exit Application</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="content bordered-content" style="margin-top:100px" >
+        <form id="login-form" action="login.php" method="post">
+            <h2>User Login</h2>
+            <div class="content">
+                <a href="/FitnessTracker/signup/">Need an account? Sign up here.</a>
+            </div>
+            <div class="content">
+                <label for="username">Username:</label>
+            </div>
+            <div>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="content">
+                <label for="password">Password:</label>
+            </div>
+
+            <div><input type="password" id="password" name="password" required></div>
+
+            <div class="content">
+                <input type="submit" value="Login" id="login-button">
+            </div>
+
+            <div>
+                <p id="login-incorrect-text" style="color:red"></p>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="/FitnessTracker/global_scripts/cookieScripts.js"></script>
+    <script src="login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

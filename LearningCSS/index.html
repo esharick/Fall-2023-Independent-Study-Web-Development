@@ -1,0 +1,223 @@
+<!DOCTYPE html> 
+<html>
+<head >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Icons/css.png">
+    <link rel="stylesheet" href="/main.css" />
+    <title>Learning CSS</title>
+</head>
+<body  id="bm1">
+    <ul class="topnav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/LearningHTML">Learning HTML</a></li>
+        <li><a href="/LearningCSS" class="active">Learning CSS</a></li>
+        <li><a href="/LearningJavaScript">Learning JavaScript</a></li>
+        <li><a href="/LearningBootstrap">Learning Bootstrap</a></li>
+        <li><a href="/LearningPHP">Learning PHP</a></li>
+        <li><a href="/ChatbotPage">Simple Chatbot</a></li>
+        <li><a href="/FitnessTracker">Fitness Tracker</a></li>
+
+    </ul>
+    <div class="content">
+        <h1> CSS: Cascading Style Sheets - Week 4 and 5 (9/18/2023 and 9/25/2023)</h1>
+        <hr />
+        <h2> I started with the html code from <a href="/LearningHTML">here.</a> I created a style sheet <a href="/main.css">'main.css'</a>
+        that I will apply to all the other pages of my website. You can view the updated appearance of the content of the page.</h2>
+        <p><strong>Note:</strong> Some of the elements I modified and put into &lt;div&gt; or &lt;span&gt; containers to apply different
+        styles. </p>
+        <h3> Here I am demonstrating the headings (added styles to show alignment):</h3>
+    </div>
+    <div class="content-left">
+        <h1>H1 - left aligned</h1>
+    </div>
+    <div class="content">
+        <h2>H2 - centered</h2>    
+    </div>
+    <div class="content-right">
+        <h3>H3 - right aligned</h3>
+    </div>
+    <h4>H4 - no style</h4>
+    <h5 class="text-colored">H5 - changed color</h5>
+    <h6 class="text-colored content">H6 - centered and changed color</h6>
+    <hr />
+
+    <div class="content bordered-content">
+        <h3 id="bm2">Displaying text</h3>
+        <p> I added a border around the 'div' containing this section. I rounded 2 of the corners more than the other 2. 
+        I also added a different margin and padding. </p>
+        <p> The &lt;p&gt; tag can be used for other text. <br /> &lt;br&gt; 
+        adds a line break between elements.<hr /> &lt;hr&gt; is a horizontal divider</p>
+        <pre>
+    &lt;pre&gt; is used for preformatted text. 
+        </pre>
+        <code>Or use 'code' to show code. <br />
+        x = 3; y = 5; <br />
+        print(x + y);</code>
+        <p>You can style elements with different tags: <b>b</b>old, 
+        <strong>strong</strong>, <i>i</i>talic, <em>em</em>phasized, 
+        <mark>mark</mark>, <small>small</small>, <del>del</del>eted, <ins>ins</ins>erted,
+        <sub>sub</sub>script, <sup>sup</sup>erscript.</p>
+        <hr />
+        <p style="color:blue">You can use the 'style="color:blue"' attribute to color elements, but you should keep styles in a style sheet (CSS)</p>
+        <p> I'll show more styles on the CSS page.</p>
+        <hr />
+    </div>
+
+    <div class="content-left">    
+        <h3 id="bm3">Navigation and Links</h3>
+        <p>The 'a' tag can create a link element. It can link between pages or elements on a page. <br />
+        You can also use text, images, buttons, and other elements as links. <br />
+        Just set the href="url" and set the target="_self/_blank/_parent/_top". <br />
+        </p>
+        <a href="https://www.bing.com/ck/a?!&&p=84c092afe720d361JmltdHM9MTcwMTkwNzIwMCZpZ3VpZD0wMDk0YmFkNy1jNTM0LTZmNmEtM2FkYi1hYTU1YzRiYzZlZjYmaW5zaWQ9NTIyMQ&ptn=3&ver=2&hsh=3&fclid=0094bad7-c534-6f6a-3adb-aa55c4bc6ef6&psq=rick+roll&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1kUXc0dzlXZ1hjUQ&ntb=1">Click me!</a>
+        <p>I'll use links with a list later to show navigation for bookmarks.</p>
+        <hr />
+    </div>    
+
+    <div class="content-left">
+        <h3 id="bm4">Tables</h3>
+        <p> The tags are 'table', 'tr' (table row), 'th' and 'td'</p>
+        <p> Then add the colspan or rowspan properties to make elements span mutliple cells.</p>
+        <p> Use CSS to style the cells adding padding border and colors.</p>
+    </div>
+    <table style="max-width:700px">
+        <tr>
+            <th>
+                A
+            </th>
+            <th>
+                B
+            </th>
+            <th>
+                C
+            </th>
+        </tr>
+        <tr>
+            <td>
+                1
+            </td>
+            <td>
+                2
+            </td>
+            <td rowspan="2">
+                Span 2 rows
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                Span 2 cols
+            </td>
+        </tr>
+    </table>
+    <hr />
+
+    
+    <div class="content-left">
+        <h3 id="bm5">Lists</h3>
+        <p>Use unorderedlist (ul), orderedlist(ol), and list items (li).</p>
+        <ul>
+            Unordered List
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+        </ul>
+        <ol>
+            Ordered List - Navigation list for this document
+            <li><a href="#bm1">Top</a></li>
+            <li><a href="#bm2">Displaying Text</a></li>
+            <li><a href="#bm3">Navigation and Links</a></li>
+            <li><a href="#bm4">Tables</a></li>
+            <li><a href="#bm5">Lists</a></li>
+            <li><a href="#bm6">Forms</a></li>
+            <li><a href="#bm7">Images and Multimedia</a></li>
+
+        </ol>
+        <p>I also added a navigation bar at the top of the page using an unordered list and styling it horizontally.</p>
+        <hr />
+    </div>
+
+    <div class="content">
+        <h3 id="bm6">Forms</h3>
+        <p> Forms are used to collect input from a user.</p>
+        <form action="/LearningCSS/">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="Edward"><br>
+            
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Sharick"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <hr />
+    </div>
+
+    <div class="bordered-content">
+        <h3 id="bm7">Images and Multimedia</h3>
+        <p> I'm reusing the border class I created. I'm using the .float property to align the pictures in a row and the hover
+        over style to apply a thicker border when the user hovers over the picture.</p>
+        <p>Images: Use the 'img' tag and 'src' property. You can adjust the 'width' and 'height'.</p>
+        <p>Videos: You can embed a youtube link into an 'iframe'.</p>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="/Images/lucy0.jpg">
+            <img src="/Images/lucy0.jpg"/>
+        </a>
+        <div class="desc">My dog Lucy!</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="/Images/lucy1.jpg">
+            <img src="/Images/lucy1.jpg"/>
+        </a>
+        <div class="desc">Alert!</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="/Images/lucy2.jpg">
+            <img src="/Images/lucy2.jpg"/>
+        </a>
+        <div class="desc">Rolling in the grass...</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="/Images/lucy3.jpg">
+            <img src="/Images/lucy3.jpg"/>
+        </a>
+        <div class="desc">Happy pup!</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="/Images/lucy4.jpg">
+            <img src="/Images/lucy4.jpg"/>
+        </a>
+        <div class="desc">Belly rubs!</div>
+      </div>
+    </div>
+        
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="/Images/lucy5.jpg">
+            <img src="/Images/lucy5.jpg"/>
+        </a>
+        <div class="desc">Good girl!</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        <div class="desc">Muppet madness!</div>
+      </div>
+    </div>
+    
+    <div class="clearfix"> </div>
+    <div class="content-right"><a href="/">Home</a></div>
+    <br />
+
+</body>
+</html>

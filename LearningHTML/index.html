@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html>
+<head >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Icons/html5.png">
+    <title>Learning HTML</title>
+</head>
+<body  id="bm1">
+    
+    <a href="/">Home</a>
+    <a href="/LearningHTML">Learning HTML</a>
+    <a href="/LearningCSS">Learning CSS</a>
+    <a href="/LearningJavaScript">Learning JavaScript</a>
+    <a href="/LearningBootstrap">Learning Bootstrap</a>
+    <a href="/LearningPHP">Learning PHP</a>
+    <a href="/ChatbotPage">Simple Chatbot</a>
+    <a href="/FitnessTracker">Fitness Tracker</a>
+
+    <br />
+    <h1> HTML: Hypertext Markup Language - Week 2 and 3 (9/4/2023 and 9/11/2023)</h1>
+    <hr />
+    <h2> This page is just plain HTML with no CSS sytling.</h2>
+    <h3> Here I am demonstrating the headings:</h3>
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <h3>H3</h3>
+    <h4>H4</h4>
+    <h5>H5</h5>
+    <h6>H6</h6>
+    <hr />
+
+    <h3 id="bm2">Displaying text</h3>
+    <p> The &lt;p&gt; tag can be used for other text. <br /> &lt;br&gt; 
+    adds a line break between elements.<hr /> &lt;hr&gt; is a horizontal divider</p>
+    <pre>
+&lt;pre&gt; is used for preformatted text. 
+    </pre>
+    <code>Or use 'code' to show code. <br />
+    x = 3; y = 5; <br />
+    print(x + y);</code>
+    <p>You can style elements with different tags: <b>b</b>old, 
+    <strong>strong</strong>, <i>i</i>talic, <em>em</em>phasized, 
+    <mark>mark</mark>, <small>small</small>, <del>del</del>eted, <ins>ins</ins>erted,
+    <sub>sub</sub>script, <sup>sup</sup>erscript.</p>
+    <hr />
+    <p style="color:blue">You can use the 'style="color:blue"' attribute to color elements, but you should keep styles in a style sheet (CSS)</p>
+    <p> I'll show more styles on the CSS page.</p>
+    <hr />
+
+    <h3 id="bm3">Navigation and Links</h3>
+    <p>The 'a' tag can create a link element. It can link between pages or elements on a page. <br />
+    You can also use text, images, buttons, and other elements as links. <br />
+    Just set the href="url" and set the target="_self/_blank/_parent/_top". <br />
+    </p>
+    <a href="https://www.bing.com/ck/a?!&&p=84c092afe720d361JmltdHM9MTcwMTkwNzIwMCZpZ3VpZD0wMDk0YmFkNy1jNTM0LTZmNmEtM2FkYi1hYTU1YzRiYzZlZjYmaW5zaWQ9NTIyMQ&ptn=3&ver=2&hsh=3&fclid=0094bad7-c534-6f6a-3adb-aa55c4bc6ef6&psq=rick+roll&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1kUXc0dzlXZ1hjUQ&ntb=1">Click me!</a>
+    <p>I'll use links with a list later to show navigation for bookmarks.</p>
+    <hr />
+
+    <h3 id="bm4">Tables</h3>
+    <p> The tags are 'table', 'tr' (table row), 'th' and 'td'</p>
+    <p> Then add the colspan or rowspan properties to make elements span mutliple cells.</p>
+    <p> Use CSS to style the cells adding padding border and colors.</p>
+    <table>
+        <tr>
+            <th>
+                A
+            </th>
+            <th>
+                B
+            </th>
+            <th>
+                C
+            </th>
+        </tr>
+        <tr>
+            <td>
+                1
+            </td>
+            <td>
+                2
+            </td>
+            <td rowspan="2">
+                Span 2 rows
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                Span 2 cols
+            </td>
+        </tr>
+    </table>
+    <hr />
+
+    <h3 id="bm5">Lists</h3>
+    <p>Use unorderedlist (ul), orderedlist(ol), and list items (li).</p>
+    <ul>Unordered List
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+    <ol> Ordered List - Navigation list for this document
+        <li><a href="#bm1">Top</a></li>
+        <li><a href="#bm2">Displaying Text</a></li>
+        <li><a href="#bm3">Navigation and Links</a></li>
+        <li><a href="#bm4">Tables</a></li>
+        <li><a href="#bm5">Lists</a></li>
+        <li><a href="#bm6">Forms</a></li>
+        <li><a href="#bm7">Images and Multimedia</a></li>
+
+    </ol>
+    <hr />
+
+    <h3 id="bm6">Forms</h3>
+    <p> Forms are used to collect input from a user.</p>
+    <form action="/LearningHTML/">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="Edward"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Sharick"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <hr />
+
+    <h3 id="bm7">Images and Multimedia</h3>
+    <p>Images: Use the 'img' tag and 'src' property. You can adjust the 'width' and 'height'.</p>
+    <p>Videos: You can embed a youtube link into an 'iframe'.</p>
+    <img src="/Images/lucy0.jpg" width="300" />
+    <br />
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    <br />
+    <a href="/">Home</a>
+
+</body>
+</html>

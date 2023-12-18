@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Icons/fitness.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/FitnessTracker/main.css" />
+    <title>Fitness Tracker | Log Workout</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/FitnessTracker/">
+                <img src="/Icons/fitness.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="/FitnessTracker/user/">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/FitnessTracker/workout_history/">Workout History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/FitnessTracker/log_workout/">Log Workout</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav exit-button" style="margin-left: auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/FitnessTracker/" onclick="logout()">Logout</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="margin-top:100px">
+        <div class="bordered-content">
+            <h1 id="addEditWorkoutLabel" style="display: inline-block">Add Workout</h1>            
+            <button id="suggestWorkoutButton" type="button" onclick="suggestWorkout()">Get a workout suggestion</button>\
+            <div id="workoutModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Select Workout Categories</h2>
+                    <form id="workoutCategoriesForm">
+                        <label><input type="checkbox" name="upperBody" value="Upper body"> Upper Body</label><br>
+                        <label><input type="checkbox" name="lowerBody" value="Lower body"> Lower Body</label><br>
+                        <label><input type="checkbox" name="backCore" value="Back and core"> Back and Core</label><br>
+                        <label><input type="checkbox" name="fullBody" value="Full body"> Full Body</label><br>
+                        <label><input type="checkbox" name="cardio" value="Cardio"> Cardio</label><br>
+                        <label><input type="checkbox" name="surprise" value="Surprise me!"> Surprise Me!</label><br>
+                        <button type="button" style="font-size: 12px" onclick="generateWorkout()">Generate Workout</button>
+                    </form>
+                    <button style="font-size: 12px" onclick="closeModal()">Exit</button>
+                </div>
+            </div>
+            <hr />
+                <form id="workoutForm">
+                    <div class="form-group">
+                        <label for="workoutDate">Workout Date:</label>
+                        <input type="date" class="form-control" id="workoutDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="startTime">Start Time:</label>
+                        <input type="time" class="form-control" id="startTime">
+                    </div>
+                    <div class="form-group">
+                        <label for="workoutDuration">Duration (minutes):</label>
+                        <input type="number" class="form-control" id="workoutDuration" placeholder="Enter duration in minutes">
+                    </div>
+                </form>
+            <hr />
+
+            <h5 id="addEditLabel" class="hover-over-label" onclick="toggleExerciseForm(); scrollToExerciseForm()">Add exercise</h5>
+            <form id="exerciseForm" style="display:none">
+                <div class="form-group">
+                    <label for="exerciseName">Exercise Name:</label>
+                    <select class="form-control" id="exerciseName"></select>
+                </div>
+                <div class="form-group">
+                    <label for="category">Target Muscle Area:</label>
+                    <select class="form-control" id="category"></select>
+                </div>
+                <div id="otherInputs" style="display: none;">
+                    <!-- Additional inputs for custom exercise name and category -->
+                    <div class="form-group">
+                        <label for="customExerciseName">Custom Exercise Name:</label>
+                        <input type="text" class="form-control" id="customExerciseName">
+                    </div>
+                    <div class="form-group">
+                        <label for="customCategory">Custom Target Muscle Area:</label>
+                        <input type="text" class="form-control" id="customCategory">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sets">Sets (optional):</label>
+                    <input type="number" class="form-control" id="sets" placeholder="Enter number of sets">
+                </div>
+                <div class="form-group">
+                    <label for="reps">Reps (optional):</label>
+                    <input type="number" class="form-control" id="reps" placeholder="Enter number of reps">
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight (optional):</label>
+                    <input type="number" class="form-control" id="weight" placeholder="Enter weight per rep">
+                </div>
+                <div class="form-group">
+                    <label for="time">Time for held exercises (optional):</label>
+                    <input type="number" class="form-control" id="time" placeholder="Enter time per set (for held core exercises)">
+                </div>
+                <div class="form-group">
+                    <label for="duration">Duration of cardio workout (optional):</label>
+                    <input type="number" class="form-control" id="duration" placeholder="Enter duration (for cardio workouts)">
+                </div>
+                <button id="addExerciseBtn" type="button" style="margin:10px" onclick="addExercise(); toggleExerciseForm()">Add Exercise</button>
+                <button id="editExerciseBtn" type="button" style="margin:10px; display:none" onclick="saveEditedExercise(); toggleExerciseForm()">Edit Exercise</button>
+            </form>
+            <hr />
+            <div id="exerciseList">
+                <h5>Exercises completed:</h5>
+                <!-- List of added exercises will appear here -->
+            </div>
+            <hr />
+            <button id="logWorkoutButton" type="button" style="margin:10px" onclick="logWorkout()">Log Workout</button>
+            <button id="updateWorkoutButton" type="button" style="margin:10px; display:none" onclick="updateWorkout()">Update Workout</button>
+
+
+        </div>
+    </div>
+
+    <hr />
+
+
+    <!--Scripts to run on every page. Authenticate user with cookie, then create a userObject variable from local storage-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/FitnessTracker/global_scripts/cookieScripts.js"></script>
+    <script src="/FitnessTracker/global_scripts/models/exercise.js"></script>
+    <script src="/FitnessTracker/global_scripts/models/workout.js"></script>
+    <script src="/FitnessTracker/global_scripts/models/user.js"></script>
+    <script src="/FitnessTracker/global_scripts/updateUser.js"></script>
+    <script src="/FitnessTracker/global_scripts/getInfoFromServer.js"></script>
+    <script src="/FitnessTracker/global_scripts/pageScripts.js"></script>
+
+    <!--Page specific scripts-->
+    <script src="logWorkout.js"></script>
+
+
+</body>
+</html>

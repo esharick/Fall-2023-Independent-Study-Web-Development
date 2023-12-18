@@ -1,0 +1,487 @@
+:root {
+    --text-color: #aaaaaa;
+    --heading-color: #a7faffbc;
+    --active-color: #a7faffff;
+    --disabled-color: #86f8ffbc;
+    --bordered-background-color: #121212cd;
+    --border-color: #357377bc;
+    --background-text-input-color: #a7faff6f;
+}
+
+body {
+    background: url('/Images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+h1, h2, h3, h4, h5, h6, a, th, form{
+    color: var(--heading-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Tahoma;
+    margin: 2px;
+}
+
+p, ul, ol, li, li a, form input, form label {
+    color: var(--text-color);
+    font-size: 12pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form label, form p{
+    color: var(--heading-color);
+}
+
+form input{
+    color: black;
+}
+
+form input {
+    border-radius: 5px;
+    margin: auto;
+}
+
+form textarea {
+    width: 90%;
+}
+
+input[type="text"], 
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="time"]{
+    background-color: var(--background-text-input-color);
+    border-color: var(--border-color);
+}
+
+.form-control {
+    background-color: var(--background-text-input-color);
+    border-color: var(--border-color);
+}
+
+.form-control:focus {
+    background-color: var(--background-text-input-color);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #49494995;
+}
+
+.error {
+    color: #FF0000;
+}
+
+.exercise-details-container {
+    display: none;
+}
+
+.exercise-details {
+    padding: 0;
+}
+
+.show {
+    display: table-row;
+}
+
+.hover-over-label {
+    cursor: pointer;
+}
+
+.hover-over-label:hover {
+    text-shadow: 1px 1px 2px var(--border-color);
+}
+
+td, table a {
+    color: var(--text-color);
+    font-size: 12pt;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    padding: 2px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 10px;
+}
+
+td, th, tr {
+    border: 1px solid var(--heading-color);
+    text-align: center;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: var(--heading-color);
+    color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--disabled-color);
+    color: black;
+}
+
+
+
+th{
+    padding:5px;
+    text-align: center;
+    background-color: var(--bordered-background-color);
+    border-color: var(--bordered-background-color);
+    color: white;
+}
+
+
+hr {
+    border-color: var(--heading-color);
+    border-width: 3px;
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.content {
+    max-width: auto;
+    margin: 10px;
+    text-align: center;
+}
+
+.content-left {
+    max-width: auto;
+    margin: 10px;
+    text-align: left;
+}
+
+.content-right {
+    max-width: auto;
+    margin: 10px;
+    text-align: right;
+}
+
+
+.bordered-content {
+    border-style: groove;
+    border-width: 3px;
+    border-color: var(--border-color);
+    border-radius: 50px 15px;
+    background-color: var(--bordered-background-color);
+    padding: 20px;
+    margin: 80px;
+    width: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .bordered-content{
+        border-style: groove;
+        border-width: 2px;
+        border-color: var(--border-color);
+        border-radius: 15px;
+        padding: 2px;
+        margin: 130px 5px;
+    }
+
+    form textarea {
+        max-width: 300px;
+    }
+}
+
+
+.overlay-container {
+    position: relative;
+    overflow: visible;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: visible;
+}
+
+.navbar{
+    background-color: var(--heading-color);
+    height: 80px;
+}
+
+
+
+.navbar-nav {
+    height: 100%;
+}
+
+button, button[type="button"] {
+    background-color: var(--disabled-color);
+    color: black;
+    padding: 12px;
+    border-radius: 35px;
+    width: 150px;
+}
+
+button:hover, button[type="button"]:hover {
+    background-color: var(--active-color);
+}
+
+input[type="submit"], select {
+    background-color: var(--active-color);
+    color: black;
+    padding: 12px;
+    border-radius: 35px;
+    width: 150px;
+   
+}
+
+input[type="submit"]:disabled {
+    background-color: var(--disabled-color);
+}
+
+input[type="checkbox"] {
+    margin: 8px;
+}
+
+.navbar-brand img {
+    background-color: var(--heading-color);
+    border-radius: 15px;
+}
+.navbar-brand img:hover {
+    background-color: var(--disabled-color);
+    color: var(--text-color);
+}
+
+.navbar-nav .nav-link{
+    background-color: var(--heading-color);
+    margin: 0 5px;
+    text-align: center;
+    width: 150px;
+    line-height: 40px; 
+    border-radius: 35px;
+    padding: 0 45px;
+}
+
+.navbar-nav .nav-link:hover{
+    background-color: var(--disabled-color);
+    color: var(--text-color);
+}
+
+
+.navbar-nav .nav-link.active {
+    background-color: var(--disabled-color);
+    color: var(--text-color);
+}
+
+.navbar-nav .nav-link.active:hover {
+    background-color: var(--disabled-color);
+}
+
+
+.navbar-toggler {
+    padding: 0 !important;
+    border-radius: 5px !important;
+    height: 50px !important;
+    width: 50px !important;
+}
+.navbar-toggler span {
+    padding: 0 !important;
+    border-radius: 5px !important;
+    height: 30px !important;
+    width: 30px !important;
+}
+
+@media only screen and (max-width: 575px) {
+
+    .navbar-nav .nav-link {
+        margin: auto;
+        background-color: #a7faffde;
+        font-size: 13px;
+        text-align: center;
+        width: 350px;
+        line-height: 40px;
+        border-radius: 5px;
+        border: 1px solid #121212cd;
+        padding: 1px 45px;
+    }
+
+        .navbar-nav .nav-link.active {
+            color: var(--border-color);
+            background-color: #a7faffde;
+        }
+}
+
+.chart-container {
+    width: 80%; /* Ensure the container takes full width */
+    position: relative;
+    margin: auto;
+    background-color: var(--disabled-color);
+}
+
+/* Set a maximum width for larger screens */
+@media only screen and (max-width: 768px) {
+    .chart-container {
+        max-width: 400px; /* Adjust the value as needed */
+        width: 100%;
+    }
+}
+
+    /* Style the canvas to take 100% width of its container */
+    canvas {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    /*overriding styles for full calendar*/
+    .fc {
+        max-width: 95%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .fc-daygrid-day-number {
+        color: var(--bordered-background-color);
+        margin: 2px 10px 0 0;
+    }
+
+    .fc-header-toolbar .fc-button {
+        max-width: 100px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .fc-daygrid-day-number {
+            font-size: 11px;
+        }
+
+        .fc-header-toolbar .fc-button {
+            max-width: 50px;
+        }
+
+        #workoutTable,
+        #exercise-details-container td,
+        #exercise-details-container th,
+        #workoutRows td,
+        #workoutRows th {
+            font-size: 11px;
+        }
+    }
+
+    @keyframes scale-up {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .animated-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
+
+        .animated-text span {
+            display: inline-block;
+            padding: 5px;
+        }
+
+    .highlight {
+        color: var(--heading-color);
+        animation: scale-up 15s infinite;
+    }
+
+    @keyframes circle {
+        0% {
+            transform: rotate(0deg) translateX(30px) rotate(0deg);
+        }
+
+        10% {
+            transform: rotate(120deg) translateX(60px) rotate(40deg);
+        }
+
+        20% {
+            transform: rotate(240deg) translateX(90px) rotate(80deg);
+        }
+
+        30% {
+            transform: rotate(360deg) translateX(120px) rotate(120deg);
+        }
+
+        40% {
+            transform: rotate(480deg) translateX(150px) rotate(160deg);
+        }
+
+        50% {
+            transform: rotate(540deg) translateX(180px) rotate(200deg);
+        }
+
+        60% {
+            transform: rotate(800deg) translateX(210px) rotate(240deg);
+        }
+
+        70% {
+            transform: rotate(840deg) translateX(1200px) rotate(280deg);
+        }
+
+        90% {
+            transform: rotate(960deg) translateX(-25px) rotate(320deg);
+        }
+
+        95% {
+            transform: rotate(540deg) translateX(0px)rotate(160deg);
+        }
+
+        100% {
+            transform: rotate(0deg) translateX(0px)rotate(0deg);
+        }
+    }
+
+    .animated-image-container {
+        width: auto;
+        height: 600px;
+        position: relative;
+        margin: auto;
+        padding: 200px;
+        border-radius: 50%;
+        overflow: clip;
+    }
+
+    .animated-image {
+        background-color: var(--heading-color);
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        animation: circle 8s infinite linear;
+        overflow: clip;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .animated-image {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    #suggestWorkoutButton {
+        width: 200px;
+        font-size: 12px;
+        height: 50px;
+        float: right;
+    }
+
+    .modal-content {
+        background-color: var(--bordered-background-color);
+        padding: 15px;
+    }

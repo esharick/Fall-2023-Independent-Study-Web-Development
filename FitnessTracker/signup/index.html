@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Icons/fitness.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/FitnessTracker/main.css" />
+    <title>Fitness Tracker | Sign-up</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/FitnessTracker/">
+                <img src="/Icons/fitness.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/FitnessTracker/login">Login</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav exit-button" style="margin-left: auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Exit Application</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Form -->
+    <div class="content bordered-content" style="margin-top:100px">
+        <form id="registration-form" method="post" action="signup.php">
+            <h2>User Registration</h2>
+            <div class="content">
+                <a href="/FitnessTracker/login/">Already have an account? Sign in here.</a>
+            </div>
+            <div class="content">
+                <label for="username">Username:</label>
+            </div>
+            <div>
+                <input type="text" id="username" name="username" onkeyup="checkUsernameExists()">
+            </div>
+            <div class="content">
+                <p id="username-match" style="color: red"></p>
+            </div>
+            <div class="content">
+                <label for="password">Password:</label>
+            </div>
+            <div>
+                <input type="password" id="password" name="password"
+                       onkeyup="checkPassword()">
+                <br />
+                <p id="pw-req-prompt">Must be at least 8 characters, contain at least one lowercase letter, one uppercase letter, one digit, and one special character '@$!%*?&amp;'.</p>
+            </div>
+
+            <div class="content">
+                <label for="confirm-password">Confirm Password:</label>
+            </div>
+            <div><input type="password" id="confirm-password" name="confirm-password" onkeyup="checkPassword()" required></div>
+            <div class="content">
+                <p id="password-match" style="color: red"></p>
+            </div>
+            <div class="content">
+                <input type="submit" value="Register" id="register-button" disabled>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="signup.js"></script>
+    <script src="/FitnessTracker/global_scripts/cookieScripts.js"></script>
+
+</body>
+</html>

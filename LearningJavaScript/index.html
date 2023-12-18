@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Icons/js.png">
+    <link rel="stylesheet" href="/main.css" />
+    <title>Learning JavaScript</title>
+</head>
+<body>
+    <ul class="topnav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/LearningHTML">Learning HTML</a></li>
+        <li><a href="/LearningCSS">Learning CSS</a></li>
+        <li><a href="/LearningJavaScript" class="active">Learning JavaScript</a></li>
+        <li><a href="/LearningBootstrap">Learning Bootstrap</a></li>
+        <li><a href="/LearningPHP">Learning PHP</a></li>
+        <li><a href="/ChatbotPage">Simple Chatbot</a></li>
+        <li><a href="/FitnessTracker">Fitness Tracker</a>
+
+    </ul>
+    <div class="content">
+        <h1> Learning JavaScript: Battleship Application - Week 6, 7 and 8 (10/2, 10/9 and 10/16/2023)</h1>
+        <hr />
+        <h3>
+            To show off my knowledge of JavaScript, I recreated the classic game of battleship. Play versus
+            the computer below.
+        </h3>
+    </div>
+
+    <div class="content" id="ship-box">
+
+    </div>
+    <div class="content">
+        <button id="rotateButton" class="uiButton">Rotate Selected Ship</button>
+        <button id="startButton" class="uiButton" disabled>Start Game</button>
+    </div>
+    <div class="content">
+        <p id="instructions" style="font-size:12px">Select a ship from the five ships above.</p>
+    </div>
+
+    <div class="grid-wrapper">
+        <div class="grid-container" id="ship-grid"></div>
+        <div class="grid-container" style="display: none" id="guess-grid"></div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Game Over!</p>
+            <p id="gameOverMessage"></p>
+            <button id="restartBtn">Restart Game</button>
+        </div>
+    </div>
+
+    <div class="clearfix">
+    </div>
+
+    <br />
+    <br />
+
+    <!--Scripts-->
+    <script src="battleship.js"></script>
+</body>
+</html>
